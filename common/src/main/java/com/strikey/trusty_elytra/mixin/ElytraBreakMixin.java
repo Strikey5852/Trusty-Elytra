@@ -13,6 +13,20 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
 public class ElytraBreakMixin {
+    @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;hurtAndBreak(ILnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/EquipmentSlot;)V"), method = "updateFallFlying")
+    private void trusty_elytra$onElytraBreak(CallbackInfo ci) {
+        LivingEntity entity = (LivingEntity) (Object) this;
+        ItemStack chest = entity.getItemBySlot(EquipmentSlot.CHEST);
+        if (chest.is(Items.ELYTRA)) {
+            int damage = chest.getDamageValue();
+            int maxDamage = chest.getMaxDamage();
+            if (damage == maxDamage - 2) {
+                // trigger vanilla break sound + particles
+                entity.onEquippedItemBroken(chest.getItem(), EquipmentSlot.CHEST);
+            }
+        }
+    }
+
     @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;setSharedFlag(IZ)V"), method = "updateFallFlying", cancellable = true)
     private void trusty_elytra$onSetSharedFlag(CallbackInfo ci) {
         LivingEntity entity = (LivingEntity) (Object) this;
