@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "trusty_elytra",
+  "version": "${version}",
+  "name": "Trusty Elytra",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/trusty_elytra/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.strikey.trusty_elytra.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "com.strikey.trusty_elytra.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "trusty_elytra.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
