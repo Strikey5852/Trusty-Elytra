@@ -68,8 +68,8 @@ public final class Config {
             Files.createDirectories(configPath.getParent());
             try (OutputStream out = Files.newOutputStream(configPath)) {
                 StringBuilder sb = new StringBuilder();
-                sb.append("# Velocity multiplier (0.0 to 1.0) when elytra breaks mid-flight\\n");
-                sb.append(KEY_ELYTRA_BREAK_VELOCITY_MULTIPLIER).append(" = ").append(DEFAULT_ELYTRA_BREAK_VELOCITY_MULTIPLIER).append("\\n");
+                sb.append("# Velocity multiplier (0.0 to 1.0) when elytra breaks mid-flight\n");
+                sb.append(KEY_ELYTRA_BREAK_VELOCITY_MULTIPLIER).append(" = ").append(DEFAULT_ELYTRA_BREAK_VELOCITY_MULTIPLIER).append("\n");
                 out.write(sb.toString().getBytes(StandardCharsets.UTF_8));
             }
         } catch (IOException e) {

@@ -3,7 +3,7 @@
   "id": "trusty_elytra",
   "version": "${version}",
   "name": "Trusty Elytra",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Your Elytra hung on so you wouldn't fall!",
   "authors": [
     "Me!"
   ],
@@ -11,15 +11,15 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "CC0-1.0",
+  "license": "GPL-3.0",
   "icon": "assets/trusty_elytra/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.strikey.trusty_elytra.fabric.ExampleModFabric"
+      "com.strikey.trusty_elytra.fabric.TrustyElytraFabric"
     ],
     "client": [
-      "com.strikey.trusty_elytra.fabric.client.ExampleModFabricClient"
+      "com.strikey.trusty_elytra.fabric.client.TrustyElytraFabricClient"
     ]
   },
   "mixins": [

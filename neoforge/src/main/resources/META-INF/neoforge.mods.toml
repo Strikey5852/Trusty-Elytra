@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GPL-3.0"
 
 [[mods]]
 modId = "trusty_elytra"
@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "Trusty Elytra"
 authors = "Me!"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Your Elytra hung on so you wouldn't fall!
 '''
 #logoFile = ""
 
