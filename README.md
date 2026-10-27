@@ -8,11 +8,6 @@
 
 - Elytra keeps working until landing when durability runs out, instead of disabling mid-flight.
 - Firework rockets cannot be used while gliding with a broken elytra.
-- Configurable velocity reduction applied when the elytra breaks mid-flight.
-
-## Config
-
-- `elytraBreakVelocityMultiplier` (0.0–1.0) - How much speed is kept when the elytra breaks mid-flight. Default `0.5`.
 
 ## License
 

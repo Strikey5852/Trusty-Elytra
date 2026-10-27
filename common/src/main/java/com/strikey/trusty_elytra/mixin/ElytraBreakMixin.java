@@ -1,7 +1,5 @@
 package com.strikey.trusty_elytra.mixin;
 
-import com.strikey.trusty_elytra.Config;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -25,14 +23,6 @@ public class ElytraBreakMixin {
             if (damage == maxDamage - 2) {
                 // trigger vanilla break sound + particles
                 entity.onEquippedItemBroken(chest.getItem(), EquipmentSlot.CHEST);
-
-                if (Config.get() != null) {
-                    float multiplier = Config.get().getElytraBreakVelocityMultiplier();
-                    if (multiplier < 1.0f) {
-                        Vec3 movement = entity.getDeltaMovement();
-                        entity.setDeltaMovement(movement.multiply(multiplier, 1.0, multiplier));
-                    }
-                }
             }
         }
     }
