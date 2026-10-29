@@ -1,4 +1,4 @@
-package com.strikey.trusty_elytra.mixin;
+package com.strikey.trusty_elytra.mixin.fabric;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;

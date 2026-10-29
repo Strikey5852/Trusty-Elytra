@@ -1,4 +1,4 @@
-package com.strikey.trusty_elytra.mixin;
+package com.strikey.trusty_elytra.mixin.fabric;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;

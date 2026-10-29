@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "com.strikey.trusty_elytra.mixin",
+  "package": "com.strikey.trusty_elytra.mixin.neoforge",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
-  "client": [
-  ],
+  "client": [],
   "mixins": [
+    "ElytraItemBreakMixin",
     "ElytraBreakMixin",
     "FireworkRocketUseMixin"
   ],

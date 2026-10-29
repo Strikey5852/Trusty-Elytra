@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.strikey.trusty_elytra.mixin.fabric",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [],
+  "mixins": [
+    "ElytraBreakMixin",
+    "FireworkRocketUseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
