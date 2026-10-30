@@ -7,7 +7,7 @@ license = "GPL-3.0"
 modId = "trusty_elytra"
 version = "${version}"
 displayName = "Trusty Elytra"
-authors = "Me!"
+authors = "Strikey"
 description = '''
 Your Elytra hung on so you wouldn't fall!
 '''
